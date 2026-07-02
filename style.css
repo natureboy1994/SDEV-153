@@ -3,31 +3,34 @@ h1 {font-weight:bold;
 }
 p {color:black;
 }
-html, body{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: sans-serif;
-    box-sizing: border-box;
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 }
 
-.top-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
+.text-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Spl
+  grid-template-rows: auto auto auto auto 1fr;
+  flex-grow: 1;
 }
 
-.header-image {
-    width:600px;
-    height:auto;
+.text-group h1 {
+  grid-column: 1;
+  margin: 0 0 10px 0;
 }
 
-.bottom-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+.text-group p:first-of-type {
+  grid-column: 1;
+  grid-row: 5;
+  margin: 0;
+}
+
+.text-group p:last-of-type {
+  grid-column: 2;
+  grid-row: 5;
+  justify-self: end;
+  margin: 0;
 }
