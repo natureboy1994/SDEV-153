@@ -11,12 +11,12 @@ p {color:black;
 .container {
     display: flex;
     width: 100%;
+    align-items: flex-start;
 }
 
 .container img {
     width: 50%;
     height: auto;
-    object-fit: cover;
 }
 
 .text-content {
@@ -28,7 +28,7 @@ p {color:black;
     gap: 10px;  
 }
 .text-footer {
-    margin-top: 150px;
+    margin-top: 210px;
     display: flex;
     justify-content: space-between;
 }
