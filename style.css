@@ -1,8 +1,9 @@
-h1 {
-  font-weight: bold;
-  font-family: Garamond, serif;
-  font-size: clamp(3.5rem, 6vw, 6rem);
-  margin: -1vw;
+h1 { 
+  font-weight: bold; 
+  font-family: Garamond, serif; 
+  font-size: clamp(3.5rem, 6vw, 6rem); 
+  line-height: 1.1; /* Keeps wrapped lines from overlapping */
+  margin-bottom: clamp(10px, 1vw, 20px); /* Replaces negative margin with safe, fluid spacing */
 }
 h2 {
   color: black;
@@ -17,7 +18,7 @@ p{
   display: flex; 
   width: 100%;
   min-height: 100vh; 
-  align-items: center;
+  align-items: flex-start;
 } 
 .container img { 
   width: 50%; 
@@ -70,7 +71,7 @@ p{
     width: 50%; 
     height: auto;
     max-height: 70vh;
-    object-fit: contain; 
+    object-fit: contain;
     align-self: flex-start;
 } 
 .text-content { 
@@ -97,3 +98,4 @@ p{
         margin-top: 40px; 
     } 
 }
+
