@@ -9,3 +9,10 @@ p {color:black;
   height: auto;
   display: block;
 }
+
+.half-right-container {
+  display: flex;
+  justify-content: flex-start; 
+  margin-left: 50%; 
+  gap: 20px; 
+}
