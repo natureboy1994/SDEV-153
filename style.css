@@ -18,6 +18,8 @@ p {color:black;
 .text-content {
     width: 50%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 .text-footer {
     margin-top: auto;
