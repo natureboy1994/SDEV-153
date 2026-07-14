@@ -3,11 +3,18 @@ h1 {
   font-family: Garamond, serif; 
   font-size: clamp(3.5rem, 6vw, 6rem); 
   line-height: 1.1;
-  margin-bottom: clamp(10px, 1vw, 20px);
+  margin-bottom: clamp(5px, 1vw, 10px);
 }
 h2 {
   color: black;
   font-size: clamp(1.25rem, 2vw, 1.75rem);
+}
+h3 { 
+  font-weight: bold; 
+  font-family: Garamond, serif; 
+  font-size: clamp(2rem, 3vw, 3rem); 
+  line-height: 1.1;
+  margin-bottom: clamp(5px, 1vw, 10px);
 }
 p{
   color: black;
@@ -58,7 +65,7 @@ p{
   font-weight: bold;
   color: #000000;
 }
-/*containers for pg 2*/
+/*containers for about me pg*/
 .container-2 { 
     display: flex; 
     width: 100%; 
@@ -97,5 +104,64 @@ p{
     .text-footer { 
         margin-top: 40px; 
     } 
+  }
+/*videos setup for 3d page*/
+.video-collage {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+  padding: 18px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+.video-container {
+  grid-column: span 4;
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content; 
+  box-sizing: border-box;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  display: block;
+}
+
+.video-description {
+  margin-top: 12px;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #334155;
+}
+
+
+.video-container.v-large {
+  grid-column: span 6; 
+}
+
+.video-container.v-wide {
+  grid-column: span 8;
+}
+
+.video-container.v-tall {
+  grid-column: span 4;
+}
+
+@media (max-width: 768px) {
+  .video-container, 
+  .video-container.v-large, 
+  .video-container.v-wide, 
+  .video-container.v-tall {
+    grid-column: span 12;
+  }
+}
+
+
 
