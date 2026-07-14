@@ -1,0 +1,10 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <title>about-me</title>
+  </head>
+<body>
+  <header class="text-header">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about-me.html" class="nav-link">About me</a>
+</header>
